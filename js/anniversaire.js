@@ -21,7 +21,7 @@ $(document).ready(function(){
 		$('#boutonDemarrage').css('visibility','hidden');
 		$('h1').css('font-size','3em');
 		$('h1').text('je léve un verre à cette superbe journée !🥂').css('color',' 	fuchsia ');
-		$('#son1')[0].play();
+		$('#son3')[0].play();
 	});
 
 $('#boutonSecond').click(function(){
@@ -31,19 +31,18 @@ $('#boutonSecond').click(function(){
 	$('#boutonSecond').css('visibility','hidden');
 	$('h1').css('font-size','4em').css('color','lime');
 	$('h1').text('c\' est le top class 🍸 !');
-	$('#son3')[0].play();
-
+	
 });
 
 $('#boutonTrois').click(function(){
 	$('h1').text('ce n\'est pas ton anniversaire !😭 ');
 	$('h1').css('font-size','3em').css('color','red')
 
+	$('#fondDroite').css('visibility','visible');
+	$('#fondGauche').css('visibility','visible');
+	$('#fond').css('justify-content','center');
 
-$('#fondDroite').css('visibility','visible');
-		$('#fondGauche').css('visibility','visible');
-		$('#fond').css('justify-content','center');
-		
+
 	//bouton central, avec désactivation du click
 		$('#boutonDemarrage').css('visibility','visible').css('background','orange','border-right','#CC5500','border-bottom','#CC5500').off('click');			
 		$('#prenom').text('Mais on t\'aime quand même '+prenom+', passe une bonne journée').css('font-size','3em').css('color','blue');
@@ -58,9 +57,6 @@ $('#fondDroite').css('visibility','visible');
 	
 	
 		
-		$('#son01')[0].play();
-		$('#son05')[0].play();
-		$('#son04')[0].play();
     });
 	
 }); 
